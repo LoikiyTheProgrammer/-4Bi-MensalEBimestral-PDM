@@ -3,6 +3,8 @@ import styles from './styleSignIn';
 import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { useNavigation } from '@react-navigation/native';
+import { FIREBASE_AUTH } from '../../firebase/index';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 export default function SignIn() {
     const navigation = useNavigation();
@@ -10,11 +12,16 @@ export default function SignIn() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    //validar campos
-
-    //logar firebase
-
-    //caso erro, exibir msg
+    const handleSignIn = async () => {
+        const auth = FIREBASE_AUTH;
+        try {
+            await signInWithEmailAndPassword(auth, email, password)
+            console.log('User signed in successfully!')
+            navigation.navigate('Main')
+        } catch (error) {
+            console.error('Authentication error:', error.message)
+        }
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -45,7 +52,7 @@ export default function SignIn() {
                     secureTextEntry={true}
                 />
 
-                <TouchableOpacity style={styles.buttonSignIn} onPress={ () => navigation.navigate('Main')}>
+                <TouchableOpacity style={styles.buttonSignIn} onPress={handleSignIn}>
                     <Text style={styles.buttonSignInText}>Entrar</Text>
                     <Icon name='arrowright' size={40} color='#fff'/>
                 </TouchableOpacity>
