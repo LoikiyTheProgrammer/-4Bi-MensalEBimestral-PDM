@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styleSignIn';
 import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -6,6 +6,15 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function SignIn() {
     const navigation = useNavigation();
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    //validar campos
+
+    //logar firebase
+
+    //caso erro, exibir msg
 
     return (
         <SafeAreaView style={styles.container}>
@@ -20,6 +29,8 @@ export default function SignIn() {
             <View style={styles.main}>
                 <TextInput
                     style={styles.Input}
+                    value={email}
+                    onChangeText={setEmail}
                     placeholder='Digite seu e-mail'
                     placeholderTextColor={'#fff'}
                     keyboardType='email-address'
@@ -27,6 +38,8 @@ export default function SignIn() {
 
                 <TextInput
                     style={styles.Input}
+                    value={password}
+                    onChangeText={setPassword}
                     placeholder='Digite sua senha'
                     placeholderTextColor={'#fff'}
                     secureTextEntry={true}
