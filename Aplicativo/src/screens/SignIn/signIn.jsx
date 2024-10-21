@@ -15,13 +15,13 @@ export default function SignIn() {
     const handleSignIn = async () => {
         const auth = FIREBASE_AUTH;
         try {
-            await signInWithEmailAndPassword(auth, email, password)
-            console.log('User signed in successfully!')
-            navigation.navigate('Main')
+            await signInWithEmailAndPassword(auth, email, password);
+            console.log('Usuário logado com sucesso:');
+            navigation.navigate('Main');
         } catch (error) {
-            console.error('Authentication error:', error.message)
+            console.error('Erro no login de usuário:', error.message);
         }
-    }
+    };
 
     return (
         <SafeAreaView style={styles.container}>
@@ -38,7 +38,7 @@ export default function SignIn() {
                     style={styles.Input}
                     value={email}
                     onChangeText={setEmail}
-                    placeholder='Digite seu e-mail'
+                    placeholder='E-mail'
                     placeholderTextColor={'#fff'}
                     keyboardType='email-address'
                 />
@@ -47,7 +47,7 @@ export default function SignIn() {
                     style={styles.Input}
                     value={password}
                     onChangeText={setPassword}
-                    placeholder='Digite sua senha'
+                    placeholder='Senha'
                     placeholderTextColor={'#fff'}
                     secureTextEntry={true}
                 />

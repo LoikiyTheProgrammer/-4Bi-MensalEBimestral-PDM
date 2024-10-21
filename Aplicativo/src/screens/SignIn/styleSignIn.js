@@ -40,12 +40,12 @@ const styles = StyleSheet.create({
         width: '95%',
         height: '40%',
         alignItems: 'center',
-        justifyContent: 'flex-end',
+        justifyContent: 'space-between',
     },
 
     Input: {
         width: '100%',
-        height: 80,
+        height: 70,
         margin: 10,
         paddingLeft: '5%',
         borderRadius: 10,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 
     buttonSignIn: {
         width: '60%',
-        height: 80,
+        height: 70,
         margin: 20,
         paddingHorizontal: '5%',
         borderRadius: 10,
