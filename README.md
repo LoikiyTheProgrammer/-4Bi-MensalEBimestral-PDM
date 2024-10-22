@@ -1,10 +1,10 @@
-#Mensal TIA
+# Mensal TIA
 Grupo:
 Daniel Savala Lhoretti;
 Mario Andrade Netto;
 Henrique Correia Zacari.
 
-#Cadastro de Usuário (signUp.jsx)
+# Cadastro de Usuário (signUp.jsx)
 O fluxo de cadastro começa quando o usuário preenche o formulário com seu nome completo, data de nascimento, e-mail, senha e confirmação de senha. Após o preenchimento, ao clicar no botão de "Criar", o processo de criação de usuário é iniciado com a seguinte sequência:
 
   - Validação da Senha:
@@ -19,7 +19,7 @@ Após a criação do usuário, os dados adicionais (nome completo e data de nasc
   - Navegação para a Tela Principal:
 Após o sucesso no registro e armazenamento de dados, o usuário é redirecionado para a tela principal da aplicação.
 
-#Login de Usuário (signIn.jsx)
+# Login de Usuário (signIn.jsx)
 O fluxo de login permite que um usuário previamente cadastrado autentique-se no sistema inserindo seu e-mail e senha. O processo é descrito abaixo:
 
   - Entrada de Dados: O usuário insere seu e-mail e senha no formulário de login.
