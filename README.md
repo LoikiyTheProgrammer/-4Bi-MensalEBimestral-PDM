@@ -1,8 +1,6 @@
 # Mensal TIA
 Grupo:
-Daniel Savala Lhoretti;
-Mario Andrade Netto;
-Henrique Correia Zacari.
+Daniel Savala Lhoretti; Mario Andrade Netto; Henrique Correia Zacari.
 
 # Cadastro de Usuário (signUp.jsx)
 O fluxo de cadastro começa quando o usuário preenche o formulário com seu nome completo, data de nascimento, e-mail, senha e confirmação de senha. Após o preenchimento, ao clicar no botão de "Criar", o processo de criação de usuário é iniciado com a seguinte sequência:
