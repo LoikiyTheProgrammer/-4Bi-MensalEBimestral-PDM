@@ -16,28 +16,20 @@ const styles = StyleSheet.create({
 
     main: {
         width: '95%',
-        height: '40%',
+        height: '50%',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
-    buttonSignOut: {
-        width: '90%',
-        height: 40,
-        margin: 20,
+    scrollview: {
+        width: '80%',
         paddingHorizontal: '5%',
-        borderRadius: 10,
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: 'red',
+        backgroundColor: '#fff',
     },
 
-    buttonSignOutText: {
-        fontSize: 25,
-        color: '#fff',
-    },
+    card: {
+        marginVertical: '5%',
+    }
 });
 
 export default styles;

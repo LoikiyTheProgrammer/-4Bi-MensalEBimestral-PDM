@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
     buttonReturnText: {
         fontSize: 30,
-        color: '#68bbe3',
+        color: '#0E86D4',
     },
 
     footer: {

@@ -27,6 +27,10 @@ export default function Home() {
                     <Text style={styles.buttonSignUpText}>Sign Up</Text>
                     <Icon name='plus' size={40} color='#fff'/>
                 </TouchableOpacity>
+
+                <TouchableOpacity onPress={ () => navigation.navigate('Main')}>
+                    <Text>pular</Text>
+                </TouchableOpacity>
             </View>
 
             <View style={styles.footer}/>

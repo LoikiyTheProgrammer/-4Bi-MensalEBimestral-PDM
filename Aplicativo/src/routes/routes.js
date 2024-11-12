@@ -4,6 +4,7 @@ import Home from '../screens/Home/home';
 import SignIn from '../screens/SignIn/signIn';
 import SignUp from '../screens/SignUp/signUp';
 import Main from '../screens/Main/main';
+import Notepad from '../screens/Notepad/notepad';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +32,12 @@ export default function Routes() {
             <Stack.Screen
                 name='Main'
                 component={Main}
+                options={{ headerShown: false}}
+            />
+
+            <Stack.Screen
+                name='Notepad'
+                component={Notepad}
                 options={{ headerShown: false}}
             />
         </Stack.Navigator>
