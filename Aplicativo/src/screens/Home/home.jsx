@@ -28,9 +28,6 @@ export default function Home() {
                     <Icon name='plus' size={40} color='#fff'/>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={ () => navigation.navigate('Main')}>
-                    <Text>pular</Text>
-                </TouchableOpacity>
             </View>
 
             <View style={styles.footer}/>
