@@ -19,12 +19,12 @@ export default function Home() {
 
             <View style={styles.main}>
                 <TouchableOpacity style={styles.buttonSignIn} onPress={ () => navigation.navigate('SignIn')}>
-                    <Text style={styles.buttonSignInText}>Sign In</Text>
+                    <Text style={styles.buttonSignInText}>Login</Text>
                     <Icon name='arrowright' size={40} color='#fff'/>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.buttonSignUp} onPress={ () => navigation.navigate('SignUp')}>
-                    <Text style={styles.buttonSignUpText}>Sign Up</Text>
+                    <Text style={styles.buttonSignUpText}>Registrar-se</Text>
                     <Icon name='plus' size={40} color='#fff'/>
                 </TouchableOpacity>
 

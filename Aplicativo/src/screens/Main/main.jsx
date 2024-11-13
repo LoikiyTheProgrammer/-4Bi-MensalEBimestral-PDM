@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styleMain';
-import { SafeAreaView, View, Image } from 'react-native';
+import { SafeAreaView, View, Image, Alert } from 'react-native';
 import { Card, Button, TextInput } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import { FIREBASE_AUTH } from '../../firebase/index';
@@ -29,8 +29,8 @@ export default function Main() {
             const newNote = { id: Date.now().toString(), text: noteText };
 
             await AsyncStorage.setItem('notes', JSON.stringify([...notes, newNote]));
-            setNoteText('');  // Limpa o campo de texto após salvar
-            console.log('Nota adicionada com sucesso!');
+            setNoteText('');
+            Alert.alert('Nota adicionada com sucesso!');
         } catch (error) {
             console.error('Erro ao adicionar a nota:', error);
         }

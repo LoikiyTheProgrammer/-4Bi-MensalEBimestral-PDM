@@ -20,24 +20,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
-    buttonSignOut: {
-        width: '90%',
-        height: 40,
-        margin: 20,
-        paddingHorizontal: '5%',
-        borderRadius: 10,
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: 'red',
-    },
-
-    buttonSignOutText: {
-        fontSize: 25,
-        color: '#fff',
-    },
 });
 
 export default styles;

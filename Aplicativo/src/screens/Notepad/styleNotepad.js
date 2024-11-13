@@ -22,9 +22,10 @@ const styles = StyleSheet.create({
     },
 
     scrollview: {
-        width: '80%',
+        width: '95%',
+        borderWidth: 1,
+        borderRadius: 10,
         paddingHorizontal: '5%',
-        backgroundColor: '#fff',
     },
 
     card: {
