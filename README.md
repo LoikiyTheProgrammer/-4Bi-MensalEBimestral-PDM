@@ -26,3 +26,37 @@ O fluxo de login permite que um usuário previamente cadastrado autentique-se no
 A função signInWithEmailAndPassword do Firebase Authentication é chamada para verificar as credenciais do usuário. Se as credenciais estiverem corretas, o Firebase autentica o usuário e o redireciona para a tela principal da aplicação.
   - Tratamento de Erros:
 Caso o e-mail ou senha estejam incorretos, o Firebase retornará uma mensagem de erro, que será exibida no console e poderá ser tratada para ser mostrada ao usuário.
+
+# Tela principal:
+O usuário pode digitar texto no campo TextInput, onde o estado noteText é atualizado.
+
+  - Adicionar Nota (handleAddNote): Quando o usuário pressiona "Adicionar nota", a função handleAddNote é chamada. A função salva a nova nota no AsyncStorage e limpa o campo de texto. Um alerta de sucesso é exibido após a nota ser adicionada.
+
+  - Botão "Ver notas salvas": Navega o usuário para a tela de notas salvas quando pressionado.
+
+  - Logout (handleSignOut): O usuário pode sair do Firebase Authentication, o que o redireciona para a tela de login.
+
+# Tela de notas salvas:
+Ela recupera as notas do AsyncStorage usando o hook useEffect e as exibe em uma lista. O usuário pode deletar notas, o que remove a nota tanto do estado local quanto do AsyncStorage. O componente é atualizado automaticamente quando uma nota é deletada.
+
+  - useEffect: Carrega as notas do AsyncStorage quando a tela de notas é exibida.
+
+  - Exclusão das notas (handleDeleteNote): Remove uma nota da lista, tanto no estado quanto no AsyncStorage.
+
+# Bibliotecas:
+  - "@expo/metro-runtime"
+  - "@react-native-async-storage/async-storage"
+  - "@react-navigation/native"
+  - "@react-navigation/native-stack"
+  - "expo"
+  - "expo-status-bar"
+  - "firebase"
+  - "react"
+  - "react-dom"
+  - "react-native"
+  - "react-native-masked-text"
+  - "react-native-paper"
+  - "react-native-safe-area-context"
+  - "react-native-screens"
+  - "react-native-vector-icons"
+  - "react-native-web"
