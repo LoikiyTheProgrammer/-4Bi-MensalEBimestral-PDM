@@ -36,11 +36,16 @@ O usuário pode digitar texto no campo TextInput, onde o estado noteText é atua
 
   - Logout (handleSignOut): O usuário pode sair do Firebase Authentication, o que o redireciona para a tela de login.
 
-  - (react-native-paper): Usado para componentes UI como Card, Button e TextInput, proporcionando uma interface limpa e moderna.
-
 # Tela de notas salvas:
 Ela recupera as notas do AsyncStorage usando o hook useEffect e as exibe em uma lista. O usuário pode deletar notas, o que remove a nota tanto do estado local quanto do AsyncStorage. O componente é atualizado automaticamente quando uma nota é deletada.
 
   - useEffect: Carrega as notas do AsyncStorage quando a tela de notas é exibida.
 
   - Exclusão das notas (handleDeleteNote): Remove uma nota da lista, tanto no estado quanto no AsyncStorage.
+
+# Bibliotecas:
+  - firebase;
+  - react-native-async-storage/async-storage;
+  - react-native-paper;
+  - react-native-vector-icons;
+  - react-native-masked-text.
