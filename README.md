@@ -44,8 +44,19 @@ Ela recupera as notas do AsyncStorage usando o hook useEffect e as exibe em uma 
   - Exclusão das notas (handleDeleteNote): Remove uma nota da lista, tanto no estado quanto no AsyncStorage.
 
 # Bibliotecas:
-  - firebase;
-  - react-native-async-storage/async-storage;
-  - react-native-paper;
-  - react-native-vector-icons;
-  - react-native-masked-text.
+  - "@expo/metro-runtime"
+  - "@react-native-async-storage/async-storage"
+  - "@react-navigation/native"
+  - "@react-navigation/native-stack"
+  - "expo"
+  - "expo-status-bar"
+  - "firebase"
+  - "react"
+  - "react-dom"
+  - "react-native"
+  - "react-native-masked-text"
+  - "react-native-paper"
+  - "react-native-safe-area-context"
+  - "react-native-screens"
+  - "react-native-vector-icons"
+  - "react-native-web"
