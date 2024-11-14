@@ -27,7 +27,7 @@ A função signInWithEmailAndPassword do Firebase Authentication é chamada para
   - Tratamento de Erros:
 Caso o e-mail ou senha estejam incorretos, o Firebase retornará uma mensagem de erro, que será exibida no console e poderá ser tratada para ser mostrada ao usuário.
 
-# Tela principal:
+# Tela principal (main.jsx)
 O usuário pode digitar texto no campo TextInput, onde o estado noteText é atualizado.
 
   - Adicionar Nota (handleAddNote): Quando o usuário pressiona "Adicionar nota", a função handleAddNote é chamada. A função salva a nova nota no AsyncStorage e limpa o campo de texto. Um alerta de sucesso é exibido após a nota ser adicionada.
@@ -36,7 +36,7 @@ O usuário pode digitar texto no campo TextInput, onde o estado noteText é atua
 
   - Logout (handleSignOut): O usuário pode sair do Firebase Authentication, o que o redireciona para a tela de login.
 
-# Tela de notas salvas:
+# Tela de notas salvas (notepad.jsx)
 Ela recupera as notas do AsyncStorage usando o hook useEffect e as exibe em uma lista. O usuário pode deletar notas, o que remove a nota tanto do estado local quanto do AsyncStorage. O componente é atualizado automaticamente quando uma nota é deletada.
 
   - useEffect: Carrega as notas do AsyncStorage quando a tela de notas é exibida.
