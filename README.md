@@ -1,6 +1,6 @@
 # 4Bi-MensalEBimestral-PDM
 Grupo:
-Daniel Savala Lhoretti; Eduardo Pereira Nunes de Oliveira; Mario Andrade Netto; Henrique Correia Zacari; Ricardo Gabriel Camargo Soares.
+Daniel Savala Lhoretti; Eduardo Pereira Nunes de Oliveira; Henrique Correia Zacari; Mario Andrade Netto; Ricardo Gabriel Camargo Soares.
 
 # Cadastro de Usuário (signUp.jsx)
 O fluxo de cadastro começa quando o usuário preenche o formulário com seu nome completo, data de nascimento, e-mail, senha e confirmação de senha. Após o preenchimento, ao clicar no botão de "Criar", o processo de criação de usuário é iniciado com a seguinte sequência:
